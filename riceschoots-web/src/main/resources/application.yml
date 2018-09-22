@@ -1,0 +1,6 @@
+#项目名称
+spring:
+  application:
+    name: riceschoots-web
+  profiles:
+    active: @profileActive@

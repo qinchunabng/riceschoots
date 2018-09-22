@@ -1,0 +1,6 @@
+#ÏîÄ¿Ãû³Æ
+spring:
+  application:
+    name: riceschoots-provider
+  profiles:
+    active: @profileActive@
