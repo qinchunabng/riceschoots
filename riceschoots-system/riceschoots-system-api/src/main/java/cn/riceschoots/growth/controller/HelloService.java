@@ -6,8 +6,11 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Created by DELL on 2018/09/26.
  */
-@RequestMapping("/refactor")
-public interface HelleService {
+//@RequestMapping("/refactor")
+public interface HelloService {
+
+    @RequestMapping("/hello")
+    String hello();
 
     @RequestMapping(value = "/hello1",method = RequestMethod.GET)
     String hello(@RequestParam("name") String name);

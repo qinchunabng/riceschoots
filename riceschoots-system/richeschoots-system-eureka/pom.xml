@@ -38,11 +38,11 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <configuration>
+        <!--<configuration>
           <executable>true</executable>
           <mainClass>com.qin.App</mainClass>
           <fork>true</fork>
-        </configuration>
+        </configuration>-->
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

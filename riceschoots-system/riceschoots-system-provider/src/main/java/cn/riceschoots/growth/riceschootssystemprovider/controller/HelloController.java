@@ -1,6 +1,6 @@
 package cn.riceschoots.growth.riceschootssystemprovider.controller;
 
-import cn.riceschoots.growth.controller.HelleService;
+import cn.riceschoots.growth.controller.HelloService;
 import cn.riceschoots.growth.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,15 +15,15 @@ import java.util.Random;
  * Created by DELL on 2018/09/26.
  */
 @RestController
-public class HelloController implements HelleService {
+public class HelloController implements HelloService {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     private DiscoveryClient discoveryClient;
 
-    @RequestMapping("/hello")
-    public String index(){
+    @Override
+    public String hello(){
         ServiceInstance instance = discoveryClient.getLocalServiceInstance();
         //让处理线程等待几秒
         int sleepTime = new Random().nextInt(3000);
