@@ -1,6 +1,5 @@
 package com.riceschoots.growth.web.service;
 
-import cn.riceschoots.growth.controller.HelloService;
 import cn.riceschoots.growth.entity.User;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestBody;

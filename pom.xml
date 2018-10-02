@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!--ä¸»pomåŒ…åŸºæœ¬ä¿¡æ¯-->
+    <!--Ö÷pom°ü»ù±¾ÐÅÏ¢-->
     <groupId>cn.riceschoots.growing</groupId>
     <artifactId>riceschoots</artifactId>
     <packaging>pom</packaging>
@@ -15,7 +13,8 @@
         <module>riceschoots-common</module>
         <module>riceschoots-system</module>
         <module>riceschoots-web</module>
-    </modules>
+    <module>riceschoots-zuul</module>
+  </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -36,10 +35,10 @@
         </dependencies>
     </dependencyManagement>
 
-    <!--åŠ è½½é…ç½®ä¿¡æ¯ start-->
+    <!--¼ÓÔØÅäÖÃÐÅÏ¢ start-->
     <build>
         <resources>
-            <!--åŠ è½½ç›®å½•å“ªäº›é…ç½®ä¿¡æ¯-->
+            <!--¼ÓÔØÄ¿Â¼ÄÄÐ©ÅäÖÃÐÅÏ¢-->
             <resource>
                 <directory>${basedir}/src/main/resources</directory>
                 <filtering>true</filtering>
@@ -49,7 +48,7 @@
                     <include>**/*.xml</include>
                 </includes>
             </resource>
-            <!--æ‰“åŒ…æŽ’é™¤å“ªäº›é…ç½®ä¿¡æ¯ä¸è¢«åŽ»æŽ‰-->
+            <!--´ò°üÅÅ³ýÄÄÐ©ÅäÖÃÐÅÏ¢²»±»È¥µô-->
             <resource>
                 <directory>${basedir}/src/main/resources</directory>
                 <excludes>
@@ -60,8 +59,8 @@
             </resource>
         </resources>
     </build>
-    <!--åŠ è½½é…ç½®ä¿¡æ¯ end-->
-    <!--å¼€å‘è€…ä¿¡æ¯æè¿° start-->
+    <!--¼ÓÔØÅäÖÃÐÅÏ¢ end-->
+    <!--¿ª·¢ÕßÐÅÏ¢ÃèÊö start-->
     <developers>
         <developer>
             <name>wangshitao</name>
@@ -73,5 +72,5 @@
             <timezone>+8</timezone>
         </developer>
     </developers>
-    <!--å¼€å‘è€…ä¿¡æ¯æè¿° end-->
+    <!--¿ª·¢ÕßÐÅÏ¢ÃèÊö end-->
 </project>

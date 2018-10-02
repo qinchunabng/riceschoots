@@ -1,10 +1,8 @@
 package com.riceschoots.growth.web.controller;
 
-import cn.riceschoots.growth.controller.HelloService;
 import cn.riceschoots.growth.entity.User;
 import com.riceschoots.growth.web.service.RefactorHelloService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
